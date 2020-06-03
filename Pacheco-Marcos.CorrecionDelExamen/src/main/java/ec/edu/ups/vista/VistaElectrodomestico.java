@@ -23,7 +23,7 @@ public class VistaElectrodomestico {
     }
     
     
-    //metdoo ingresarLavadora
+    //metodo ingresarLavadora
     public Television ingresarTelevision(){
         Television tlv = new Television();
         

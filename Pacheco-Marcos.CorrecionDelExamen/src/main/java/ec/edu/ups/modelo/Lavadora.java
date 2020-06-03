@@ -16,10 +16,12 @@ public class Lavadora extends Electrodomestico {
     public Lavadora() {
     }
 
+    
     public Lavadora(int codigo) {
         super(codigo);
     }
 
+    //getters y setters
     public int getCarga() {
         return carga;
     }

@@ -38,18 +38,22 @@ public class Principal {
 
             switch (opc) {
 
+                // llamamos al metodo registraTelevision por medio del controladorElectrodomesticos
                 case 1: for (int i = 1; i < 4; i++) {
                         System.out.println("TELEVISOR NUMERO" + i + ":  ");
                         controladorElectrodomestico.registrarTelevision();
                         }
 
+                // llamamos al metodo registraLavadoras por medio del controladorElectrodomesticos
                 case 2: for (int i = 1; i < 4; i++) {
                         System.out.println("LAVADORA NUMERO" + i + ":  ");
-                        controladorElectrodomestico.RegistrarLavadora();
+                        controladorElectrodomestico.registrarLavadora();
                         }
   
+                // llamamos al metodo verTelevisiones por medio del controladorElectrodomesticos
                 case 3: controladorElectrodomestico.verTelevisiones();
 
+                // llamamos al metodo verLavadoras por medio del controladorElectrodomesticos
                 case 4: controladorElectrodomestico.verLavadoras();
 
                 default:

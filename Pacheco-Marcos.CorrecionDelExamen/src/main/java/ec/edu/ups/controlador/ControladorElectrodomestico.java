@@ -24,27 +24,32 @@ public class ControladorElectrodomestico {
     private ElectrodomesticoDAO electrodomesticoDAO;
 
     
+    // constructor
     public ControladorElectrodomestico(VistaElectrodomestico vistaElectrodomestico, ElectrodomesticoDAO electrodomesticoDAO) {
         this.vistaElectrodomestico = vistaElectrodomestico;
         this.electrodomesticoDAO = electrodomesticoDAO;
     }
 
+    // metodo registrarTelevision
     public void registrarTelevision(){
         Television television = vistaElectrodomestico.ingresarTelevision();
         electrodomesticoDAO.crearTelevision(television);
     }
     
-    public void RegistrarLavadora(){
+    //metodo registrarLavadora
+    public void registrarLavadora(){
         Lavadora lavadora = vistaElectrodomestico.ingresarLavadora();
         electrodomesticoDAO.crearLavadora(lavadora);
     }
     
+    //metodo verLavadoras
     public void verLavadoras(){
         List lavadoras = electrodomesticoDAO.listarLavadora();
         vistaElectrodomestico.mostrarLavadora(lavadoras);
      
     }
     
+    //metodo verTelevisiones
     public void verTelevisiones(){
         List televisiones = electrodomesticoDAO.listarTelevision();
         vistaElectrodomestico.mostrarTelevisiones(televisiones);

@@ -21,6 +21,7 @@ public class Electrodomestico {
     public Electrodomestico() {
     }
 
+    //getters y setters
     public Electrodomestico(int codigo) {
         this.codigo = codigo;
     }
@@ -113,7 +114,7 @@ public class Electrodomestico {
     }
 
 
-    //mtodo  CompareTo
+    //metodo  CompareTo
     public int compareTo(Object o) {
         int resultado = 0;
         Electrodomestico e = (Electrodomestico) o;
