@@ -23,6 +23,7 @@ public class ControladorElectrodomestico {
     private Electrodomestico electrodomestico;
     private ElectrodomesticoDAO electrodomesticoDAO;
 
+    
     public ControladorElectrodomestico(VistaElectrodomestico vistaElectrodomestico, ElectrodomesticoDAO electrodomesticoDAO) {
         this.vistaElectrodomestico = vistaElectrodomestico;
         this.electrodomesticoDAO = electrodomesticoDAO;

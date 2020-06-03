@@ -11,12 +11,14 @@ package ec.edu.ups.modelo;
  */
 public class Television extends Electrodomestico {
     
-     private int resolucion;
+    //Atributos
+    private int resolucion;
     private boolean puertoHDMI;
 
     public Television() {
     }
 
+    //getters y setters
     public Television(int codigo) {
         super(codigo);
     }
@@ -37,7 +39,16 @@ public class Television extends Electrodomestico {
         this.puertoHDMI = puertoHDMI;
     }
 
+ 
+    //metodo toString
     @Override
+    public String toString() {
+        super.toString();
+        return "Television{" + "resolucion=" + resolucion + ", puertoHDMI=" + puertoHDMI + '}';
+    }
+    
+    //metodo obtenerPrecioFinal
+       @Override
     public double obtenerPrecioFinal() {
         
         super.obtenerPrecioFinal();
@@ -49,10 +60,5 @@ public class Television extends Electrodomestico {
         }
         return super.getPrecioBase();
     }
-
-    @Override
-    public String toString() {
-        super.toString();
-        return "Television{" + "resolucion=" + resolucion + ", puertoHDMI=" + puertoHDMI + '}';
-    }
+    
 }

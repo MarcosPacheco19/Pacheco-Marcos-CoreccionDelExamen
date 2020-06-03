@@ -34,6 +34,7 @@ public class Lavadora extends Electrodomestico {
         return "Lavadora{" + "carga=" + carga + '}';
     }
 
+    //metodo obtenerPrecioFinal
     @Override
     public double obtenerPrecioFinal() {
         super.obtenerPrecioFinal();

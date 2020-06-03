@@ -22,6 +22,8 @@ public class VistaElectrodomestico {
         entrada = new Scanner(System.in);
     }
     
+    
+    //metdoo ingresarLavadora
     public Television ingresarTelevision(){
         Television tlv = new Television();
         
@@ -29,27 +31,20 @@ public class VistaElectrodomestico {
         System.out.print("INGRESE EL CODIGO:\t  ");
         int codigo = entrada.nextInt();
         entrada.nextLine();
-        
         System.out.print("\nINGRESE LA DESCRIPCION:\t");
         String descripcion = entrada.nextLine();
-        
         System.out.print("\nINGRESE EL PRECIO BASE:\t");
         double precio = entrada.nextDouble();
         entrada.nextLine();
-        
         System.out.print("\nINGRESE EL COLOR:\t");
         String color = entrada.nextLine();
-        
         System.out.print("\nINGRESE EL CONSUMO ENERGETICO:\t");
         String energia = entrada.next();
         char consumo = energia.charAt(0);
-        
         System.out.print("\nINGRESE EL PESO:\t");
         int peso = entrada.nextInt();
-        
         System.out.print("\nINGRESE LA RESOLUCION:\t");
         int resolucion = entrada.nextInt();
-        
         System.out.print("\nINGRESE SI TIENE PUERTOS HDMI (TRUE/FALSE):\t");
         boolean hdmi = entrada.nextBoolean();
         
@@ -65,34 +60,29 @@ public class VistaElectrodomestico {
         return tlv;
     }
     
+    
+    //metodo  ingresarLavadora
     public Lavadora ingresarLavadora() {
         Lavadora lvd = new Lavadora();
         
-System.out.print("HA ESCOGIDO INGRESAR UNA  LAVADORA\n");
+        System.out.print("HA ESCOGIDO INGRESAR UNA  LAVADORA\n");
         System.out.print("INGRESE EL CODIGO:\t  ");
         int codigo = entrada.nextInt();
         entrada.nextLine();
-        
         System.out.print("\nINGRESE LA DESCRIPCION:\t");
         String descripcion = entrada.nextLine();
-        
         System.out.print("\nINGRESE EL PRECIO BASE:\t");
         double precio = entrada.nextDouble();
-        entrada.nextLine();
-        
+        entrada.nextLine(); 
         System.out.print("\nINGRESE EL COLOR:\t");
         String color = entrada.nextLine();
-        
         System.out.print("\nINGRESE EL CONSUMO ENERGETICO:\t");
         String energia = entrada.next();
-        char consumo = energia.charAt(0);
-        
+        char consumo = energia.charAt(0); 
         System.out.print("\nINGRESE EL PESO:\t");
         int peso = entrada.nextInt();
-        
         System.out.print("\nINGRESE LA RESOLUCION:\t");
         int resolucion = entrada.nextInt();
-        
         System.out.print("\nINGRESE LA CARGA:\t");
         int carga = entrada.nextInt();
         
@@ -107,11 +97,13 @@ System.out.print("HA ESCOGIDO INGRESAR UNA  LAVADORA\n");
         return lvd;
     }
     
+    //metodo mostrarLavadoras
     public void mostrarLavadora(List<Lavadora> lavadoras) {
         System.out.println("\nLAVADORAS\n");
         System.out.println(lavadoras);
     }
     
+    //metodo mostrarTelevisiones
     public void mostrarTelevisiones(List<Television> televisiones) {
         System.out.println("\nTELEVISIONES\n");
         System.out.println(televisiones);

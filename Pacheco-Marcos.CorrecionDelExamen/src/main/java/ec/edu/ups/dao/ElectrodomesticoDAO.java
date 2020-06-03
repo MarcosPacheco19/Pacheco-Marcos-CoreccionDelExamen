@@ -26,14 +26,17 @@ public class ElectrodomesticoDAO {
         lista = new TreeSet<>();
     }
     
+    //metodo crearTelevision
     public void crearTelevision(Television television) {
         lista.add(television);
     }
 
+    //metodo crearLavadora
     public void crearLavadora(Lavadora lavadora) {
         lista.add(lavadora);
     }
 
+    //metodo ListarLavadora
     public List<Lavadora> listarLavadora() {
         List lavadoras = new ArrayList<>();
         
@@ -46,6 +49,7 @@ public class ElectrodomesticoDAO {
         return lavadoras;
     }
 
+    //metodo ListarTelevision
     public List<Television> listarTelevision() {
         List televisiones = new ArrayList<>();
         

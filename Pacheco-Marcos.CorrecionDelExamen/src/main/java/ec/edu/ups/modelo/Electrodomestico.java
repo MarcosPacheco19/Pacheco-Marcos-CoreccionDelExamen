@@ -73,6 +73,13 @@ public class Electrodomestico {
         this.peso = peso;
     }
     
+    // metdo to String
+      @Override
+    public String toString() {
+        return "Electrodomestico{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico=" + consumoEnergetico + ", peso=" + peso + '}';
+    }
+    
+    //metdo obtenerPrecioFinal
     public double obtenerPrecioFinal() {
         if (this.consumoEnergetico == 'A') {
             this.precioBase += 100;
@@ -105,11 +112,8 @@ public class Electrodomestico {
         return this.precioBase;
     }
 
-    @Override
-    public String toString() {
-        return "Electrodomestico{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico=" + consumoEnergetico + ", peso=" + peso + '}';
-    }
 
+    //mtodo  CompareTo
     public int compareTo(Object o) {
         int resultado = 0;
         Electrodomestico e = (Electrodomestico) o;
